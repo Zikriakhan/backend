@@ -9,6 +9,7 @@ let moduleIdCounter = 2;
 let topicIdCounter = 2;
 let questionIdCounter = 2;
 
+
 // Sample initial data
 let courseData = {
     courses: [
@@ -71,6 +72,15 @@ const findTopicById = (courseId, moduleId, topicId) => {
 };
 
 // ==================== COURSE ROUTES ====================
+
+
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the testing .');
+});
+
+
+
 app.get('/api/courses', (req, res) => {
     try {
         res.json({
